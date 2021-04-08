@@ -6,6 +6,10 @@
 
 int LEDACESO = LEDVERMELHO;
 
+bool isPushButtonPressionado() {
+     return digitalRead(BOTAO) == HIGH;
+} 
+
 bool isLedVermelhoAceso(){
     return LEDACESO == LEDVERMELHO;
 }
@@ -92,5 +96,3 @@ void loop(){
     }
 
 }
-
-
